@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.container {
+  background: #F3F3F3;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 1%;
+  padding: 70px 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.big-card {
+  flex-basis: 48%;
+}
+.small-card {
+  flex-basis: 23%;
+}
+.bonus {
+  background: #65B8E0;
+}
+.news {
+  background: #57D9B7;
+}
+.games {
+  background: url('./img/games-fon.jpg') center center no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 0px 200px 200px rgba(0, 0, 0, .5);
+}
+.shop {
+  background: url('./img/shop-fon.jpg') center center no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 0px 200px 200px rgba(0, 0, 0, .5);
+  padding: 0 15px 20px;
+}
+.study {
+  background: url('./img/licey-fon.jpg') center center no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 0px 200px 200px rgba(0, 0, 0, .5);
+}
+.wink {
+  background: #273A64;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+h2 {
+  margin-bottom: 10px;
+}
+a {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: .8rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .big-card {
+    flex-basis: 100%;
+  }
+  .small-card {
+    flex-basis: 48%;
+  }
+  .shop {
+    flex-basis: 48%;
+  }
+  .wink {
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    flex-basis: 100%;
+  }
+}
